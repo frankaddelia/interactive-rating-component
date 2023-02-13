@@ -12,22 +12,43 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./dist/styles/styles.css" type="text/css">
 </head>
 
 <body>
-    <main>
+    <main class="container">
         <!-- Rating state start -->
         <div class="card">
-            <h1 class="card-header">How did we do?</h1>
+            <span class="circle">
+                <img src="./images/icon-star.svg" alt="Star icon" />
+            </span>
+            <h1 class="card-header">
+                How did we do?
+            </h1>
             <div class="card-body">
                 <p>
                     Please let us know how we did with your support request. All feedback is appreciated
                     to help us improve our offering!
                 </p>
                 
-                <p>1 2 3 4 5</p>
+                <ul class="ratings">
+                    <li>
+                        <span class="circle">1</span>
+                    </li>
+                    <li>
+                        <span class="circle">2</span>
+                    </li>
+                    <li>
+                        <span class="circle">3</span>
+                    </li>
+                    <li>
+                        <span class="circle">4</span>
+                    </li>
+                    <li>
+                        <span class="circle">5</span>
+                    </li>
+                </ul>
 
                 <button id="submit" class="button">Submit</button>
             </div>

@@ -1,16 +1,106 @@
 :root {
+    --orange: hsl(25, 97%, 53%);
     --white: hsl(0, 0%, 100%);
     --light-grey: hsl(217, 12%, 63%);
     --medium-grey: hsl(216, 12%, 54%);
-    --dark-dlue: hsl(213, 19%, 18%);
+    --dark-blue: hsl(213, 19%, 18%);
     --very-dark-blue: hsl(216, 12%, 8%);
+    --very-very-dark-blue: hsl(232, 30%, 8%);
+}
+
+body, html {
+    background-color: var(--very-very-dark-blue);
+    color: var(--white);
+    font-family: "Overpass", sans-serif;
+}
+
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;    
+    justify-content: center;
+    max-height: 95vh;
+}
+
+.card {
+    background-image: linear-gradient(var(--dark-blue), var(--very-dark-blue));
+    border-radius: 1.25rem;
+    font-size: 0.9375rem;
+    max-width: 18.75rem;
+    padding: 1.5625rem;
+    
+    .card-body {
+        color: var(--medium-grey);
+        line-height: 1.5;
+    }
+}
+
+.ratings {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.button {
+    background-color: var(--orange);
+    border: none;
+    border-radius: 1.5rem;
+    color: var(--white);
+    font-family: "Overpass", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    height: 3rem;
+    letter-spacing: 0.1875rem;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.circle {
+    align-items: center;
+    background-color: var(--dark-blue);
+    border-radius: 50%;
+    color: var(--medium-grey);
+    display: flex;
+    height: 3rem;
+    justify-content: center;
+    position: relative;
+    width: 3rem;
 }
 
 .attribution {
+    bottom: 0;
     font-size: 11px;
+    left: 0;
+    position: absolute;
     text-align: center; 
+    width: 100%;
 
     a { 
         color: hsl(228, 45%, 44%); 
     }
+}
+
+// utility
+.mt-1 {
+    margin-top: 1rem;
+}
+
+.mt-2 {
+    margin-top: 2rem;
+}
+
+.mt-3 {
+    margin-top: 3rem;
+}
+
+.mt-4 {
+    margin-top: 4rem;
+}
+
+.mx-1 {
+    margin: 1rem 0;
 }
