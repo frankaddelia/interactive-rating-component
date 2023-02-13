@@ -81,6 +81,15 @@ body, html {
   position: relative;
   width: 3rem;
 }
+.circle.active {
+  background-color: var(--light-grey);
+  color: var(--white);
+}
+.circle:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  cursor: pointer;
+}
 
 .attribution {
   bottom: 0;

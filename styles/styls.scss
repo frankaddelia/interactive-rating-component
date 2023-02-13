@@ -82,6 +82,17 @@ body, html {
     justify-content: center;
     position: relative;
     width: 3rem;
+
+    &.active {
+        background-color: var(--light-grey);
+        color: var(--white);
+    }
+
+    &:hover {
+        background-color: var(--orange);
+        color: var(--white);
+        cursor: pointer;
+    }
 }
 
 .attribution {
